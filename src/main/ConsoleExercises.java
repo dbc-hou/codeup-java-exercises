@@ -25,7 +25,7 @@ public class ConsoleExercises {
         float width = scanner.nextFloat();
         float area = length * width;
         float perimeter = (length * 2) + (width * 2);
-        System.out.println("So the area of your room is " + area + " square feet; the perimeter is "+ perimeter + " feet.");
+        System.out.printf("So the area of your room is %.2f square feet;\n the perimeter is %.2f feet.",area,perimeter);
         scanner.close();
     }
 }
