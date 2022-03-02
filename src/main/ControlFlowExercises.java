@@ -11,7 +11,7 @@ public class ControlFlowExercises {
 //        long k = 2;
 
         while (i <= 15) {
-            System.out.println("i = " + i);
+            System.out.print(i + " ");
             i++;
         }
         System.out.println("Done!");
