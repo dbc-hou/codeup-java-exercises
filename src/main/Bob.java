@@ -6,7 +6,7 @@ public class Bob {
     public static void main(String[] args) {
         System.out.println("YOU talk to Bob. I can't tell that kid anything");
         Scanner bobScan = new Scanner(System.in);
-        String talkToBob = bobScan.nextLine();
+        String talkToBob = bobScan.nextLine().trim(); //in case user hits space after the ? or !
         if (talkToBob.endsWith("?")) {
             System.out.println("Sure.");
         } else
