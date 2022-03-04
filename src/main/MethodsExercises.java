@@ -1,5 +1,7 @@
 package main;
 import java.util.Scanner;
+//Validation in this could be improved by calling .hasNextInt() on the Scanner object
+//to make certain that the user has entered an integer.
 
 public class MethodsExercises {
     public static void main(String[] args) {
