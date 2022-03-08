@@ -7,9 +7,8 @@ public class CircleApp {
         boolean repeat = true;
         do {
             System.out.println("Please enter a radius for your circle:");
-            double myRadius = myInput.getDouble();
-            Circle myCircle = new Circle(1);
-            double myCircumference = myCircle.getCircumference(myRadius);
+            Circle myCircle = new Circle(myInput.getDouble());
+            double myCircumference = myCircle.getCircumference();
             double myArea = myCircle.getArea(myRadius);
             System.out.printf("The circumference of a circle with radius %d is %d.", myRadius, myCircle);
             System.out.println();

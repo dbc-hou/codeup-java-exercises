@@ -24,5 +24,6 @@ public class InputTest {
         double yourRadius = myInput.getDouble();
         System.out.println("The circumference of a circle with radius " + yourRadius + " is " + Math.PI * 2 * yourRadius + ".");
         System.out.println("The area of a circle with radius " + yourRadius + " is " + Math.PI * yourRadius * yourRadius + ".");
+        myInput.closeMe();
     }
 }

@@ -50,4 +50,8 @@ public class Input {
     public double getDouble() {
         return scanner.nextDouble();
     }
+
+    public void closeMe() {
+        scanner.close();
+    }
 }
