@@ -10,6 +10,7 @@ public class Square extends Rectangle {
         super(side,side);
     }
 
+//Methods that override the equivalent methods of the superclass Rectangle
     public double getPerimeter() {
         return super.getLength() * 4;
     }
