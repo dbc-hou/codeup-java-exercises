@@ -8,6 +8,7 @@ public class Rectangle {
     public Rectangle(double rectLength, double rectWidth) {
         this.length = rectLength;
         this.width = rectWidth;
+        System.out.println("In rectangle constructor.");
     }
 
 //Getters for the instance variables length & width
