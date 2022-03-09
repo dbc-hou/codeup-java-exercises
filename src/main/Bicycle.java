@@ -12,7 +12,6 @@ public class Bicycle {
     private String favoriteSong = "Bicycle Races";
 
     public Bicycle(String make, String model) {
-        Bicycle bicycle = new Bicycle();
         this.make = make;
         this.model = model;
     }

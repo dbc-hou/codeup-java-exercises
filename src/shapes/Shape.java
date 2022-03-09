@@ -1,4 +1,5 @@
 package shapes;
 
-public class Shape {
+abstract class Shape implements Measurable {
+
 }

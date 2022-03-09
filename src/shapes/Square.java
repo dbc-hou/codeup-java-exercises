@@ -1,24 +1,27 @@
 package shapes;
 
-public class Square extends Rectangle {
-    private double side;
-    //Default constructor
-    public Square(double rectLength, double rectWidth) {
-        super(rectLength, rectWidth);
-    }
-//One-arg constructor
+public class Square extends Quadrilateral implements Measurable {
     public Square(double side) {
-        super(side,side);
-        this.side = side;
-        System.out.println("In square constructor.");
+        super(side, side);
     }
 
-//Methods that override the equivalent methods of the superclass Rectangle
+    @Override
     public double getPerimeter() {
-        return this.side * 4;
+        return this.length * 4;
     }
 
+    @Override
     public double getArea() {
-        return Math.pow(this.side,2);
+        return Math.pow(this.length,2);
+    }
+
+    @Override
+    void setLength(double length) {
+
+    }
+
+    @Override
+    void setWidth(double width) {
+
     }
 }
