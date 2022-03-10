@@ -25,7 +25,7 @@ public class ArraysExercises {
         for (int i = 0; i < personArrayElements; i++) {
             newArray[i] = personArray[i];
         }
-        newArray[personArrayElements + 1] = newPerson;
+        newArray[personArrayElements] = newPerson;
         return newArray;
     }
 }
