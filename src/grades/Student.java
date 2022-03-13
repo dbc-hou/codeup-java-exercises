@@ -3,17 +3,22 @@ package grades;
 import java.util.ArrayList;
 
 public class Student {
-    private static String name = "Steve";
-    private static ArrayList<Integer> grades;
+    private String name;
+    private ArrayList<Integer> grades;
 
     public static void main(String[] args) {
-        Student s = new Student(name);
-        s.addGrade(87);
-        s.addGrade(96);
-        s.addGrade(73);
-        s.addGrade(82);
-        System.out.println(name + "'s average as of now: " + s.getGradeAverage());
+        Student s = new Student("Steve");
+
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", grades=" + grades +
+                '}';
+    }
+
     public Student(String name) {
         this.name = name;
         this.grades = new ArrayList<>();
